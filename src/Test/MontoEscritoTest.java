@@ -13,12 +13,12 @@ class MontoEscritoTest {
 		// Instanciar la clase MontoEscrito
 		MontoEscrito PruebaMIles = new MontoEscrito();
 		// declaro variable valor esperado
-		String letrasesperadas = "Nueve mil";
+		String letrasesperadas = "tres mil";
 		// declaro variable valor obtenido
-		String letrasobtenidas = PruebaMIles.ConvertirNumero("9000");
+		String letrasobtenidas = PruebaMIles.ConvertirNumero("3000");
 		// se hace la comparación
-		//System.out.println(letrasobtenidas);
-		assertEquals(letrasesperadas, letrasobtenidas);
+		System.out.println(letrasobtenidas);
+		assertEquals(letrasesperadas.toUpperCase(), letrasobtenidas);
 	}
 
 	@Test
@@ -26,12 +26,12 @@ class MontoEscritoTest {
 		// Instanciar la clase MontoEscrito.
 		MontoEscrito PruebaCentenas = new MontoEscrito();
 		// Declaro variable valor esperado.
-		String letrasesperadas = "Ciento";
+		String letrasesperadas = "Ciento uno";
 		// Declaro variable valor obtenido.
 		String letrasobtenidas = PruebaCentenas.ConvertirNumero("101");
 		// Hago la comparacion.
 		//System.out.println(letrasobtenidas);
-		assertEquals(letrasesperadas, letrasobtenidas);
+		assertEquals(letrasesperadas.toUpperCase(), letrasobtenidas);
 
 	}
 	
@@ -45,7 +45,7 @@ class MontoEscritoTest {
 		String letrasobtenidas = PruebaDecenas.ConvertirNumero("17");
 		//Hago una Comparacion.
 		//System.out.println(letrasobtenidas);
-		assertEquals(letrasesperadas, letrasobtenidas);
+		assertEquals(letrasesperadas.toUpperCase(), letrasobtenidas);
 		
 	}
 	
@@ -58,10 +58,21 @@ class MontoEscritoTest {
 		//Declaro variable valor esperado.
 		String letrasobtenidas = PruebaUnidades.ConvertirNumero("5");
 		//Hago una comparacion.
-		System.out.println(letrasobtenidas);
-		assertEquals(letrasesperadas, letrasobtenidas); 
+		//System.out.println(letrasobtenidas);
+		assertEquals(letrasesperadas.toUpperCase(), letrasobtenidas); 
 	}
 	 
-	
+	@Test
+	void TestFinal() {
+		//Instanciar la clase MontoEscrito.
+		MontoEscrito PruebaUnidades = new MontoEscrito();
+		//Declaro variable valor esperado.
+		String letrasesperadas = "Mil cien";
+		//Declaro variable valor esperado.
+		String letrasobtenidas = PruebaUnidades.ConvertirNumero("1100");
+		//Hago una comparacion.
+		System.out.println(letrasobtenidas);
+		assertEquals(letrasesperadas.toUpperCase(), letrasobtenidas);
+	}
 
 }
