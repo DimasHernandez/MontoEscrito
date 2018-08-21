@@ -40,14 +40,27 @@ class MontoEscritoTest {
 		//Instanciar la clase MontoEscrito.
 		MontoEscrito PruebaDecenas = new MontoEscrito();
 		//Declaro Variable valor esperado.
-		String letrasesperadas = "Diecinueve";
-		//Declaro Variable.
-		String letrasobtenidas = PruebaDecenas.ConvertirNumero("19");
+		String letrasesperadas = "Diecisiete";
+		//Declaro Variable valor esperado.
+		String letrasobtenidas = PruebaDecenas.ConvertirNumero("17");
 		//Hago una Comparacion.
-		System.out.println(letrasobtenidas);
+		//System.out.println(letrasobtenidas);
 		assertEquals(letrasesperadas, letrasobtenidas);
 		
-	} 
+	}
+	
+	@Test
+	void TestUnidades() {
+		//Instanciar la clase MontoEscrito.
+		MontoEscrito PruebaUnidades = new MontoEscrito();
+		//Declaro variable valor esperado.
+		String letrasesperadas = "Cinco";
+		//Declaro variable valor esperado.
+		String letrasobtenidas = PruebaUnidades.ConvertirNumero("5");
+		//Hago una comparacion.
+		System.out.println(letrasobtenidas);
+		assertEquals(letrasesperadas, letrasobtenidas); 
+	}
 	 
 	
 

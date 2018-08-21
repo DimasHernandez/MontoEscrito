@@ -190,6 +190,39 @@ public class MontoEscrito {
 			break;
 
 		}
+		
+		//switch para unidades.
+		switch (valor.substring(3, 4)){
+		
+		case "1":
+			valorletras = "Uno";
+			break;
+		case "2":
+			valorletras = "Dos"; 
+			break;
+		case "3":
+			valorletras = "Tres";
+			break;
+		case "4":
+			valorletras = "Cuatro";
+			break;
+		case "5":
+			valorletras = "Cinco";
+			break;
+		case "6":
+			valorletras = "Seis";
+			break;
+		case "7":
+			valorletras = "Siete";
+			break;
+		case "8":
+			valorletras = "Ocho";
+			break;
+		case "9":
+			valorletras = "Nueve";
+			break;
+		}
+		
 		return valorletras;
 	}
 }
