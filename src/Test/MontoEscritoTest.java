@@ -13,9 +13,9 @@ class MontoEscritoTest {
 		// Instanciar la clase MontoEscrito
 		MontoEscrito PruebaMIles = new MontoEscrito();
 		// declaro variable valor esperado
-		String letrasesperadas = "tres mil";
+		String letrasesperadas = "tres mil cuatrocientos uno";
 		// declaro variable valor obtenido
-		String letrasobtenidas = PruebaMIles.ConvertirNumero("3000");
+		String letrasobtenidas = PruebaMIles.ConvertirNumero("3401");
 		// se hace la comparación
 		System.out.println(letrasobtenidas);
 		assertEquals(letrasesperadas.toUpperCase(), letrasobtenidas);
@@ -62,7 +62,9 @@ class MontoEscritoTest {
 		assertEquals(letrasesperadas.toUpperCase(), letrasobtenidas); 
 	}
 	 
-	@Test
+	
+	//Esta Prueba No es Necesaria.
+	/*@Test
 	void TestFinal() {
 		//Instanciar la clase MontoEscrito.
 		MontoEscrito PruebaUnidades = new MontoEscrito();
@@ -73,6 +75,6 @@ class MontoEscritoTest {
 		//Hago una comparacion.
 		System.out.println(letrasobtenidas);
 		assertEquals(letrasesperadas.toUpperCase(), letrasobtenidas);
-	}
+	}*/
 
 }

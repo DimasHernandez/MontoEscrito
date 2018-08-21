@@ -28,31 +28,85 @@ public class MontoEscrito {
 		switch (valor.substring(0, 1)) {
 
 		case "1":
-			valorletras = "Mil ";
+			if (valor.subSequence(1, 2).equals("0") && valor.subSequence(2, 3).equals("0")
+					&& valor.subSequence(3, 4).equals("0")) {
+				valorletras = "Mil";
+
+			} else {
+				valorletras = "Mil ";
+			}
 			break;
 		case "2":
-			valorletras = "Dos mil ";
+			if (valor.subSequence(1, 2).equals("0") && valor.subSequence(2, 3).equals("0")
+					&& valor.subSequence(3, 4).equals("0")) {
+				valorletras = "Dos Mil";
+
+			} else {
+				valorletras = "Dos Mil ";
+			}
 			break;
 		case "3":
-			valorletras = "Tres mil ";
+			if (valor.subSequence(1, 2).equals("0") && valor.subSequence(2, 3).equals("0")
+					&& valor.subSequence(3, 4).equals("0")) {
+				valorletras = "Tres Mil";
+
+			} else {
+				valorletras = "Tres Mil ";
+			}
 			break;
 		case "4":
-			valorletras = "Cuatro mil ";
+			if (valor.subSequence(1, 2).equals("0") && valor.subSequence(2, 3).equals("0")
+					&& valor.subSequence(3, 4).equals("0")) {
+				valorletras = "Cuatro Mil";
+
+			} else {
+				valorletras = "Cuatro Mil ";
+			}
 			break;
 		case "5":
-			valorletras = "Cinco mil ";
+			if (valor.subSequence(1, 2).equals("0") && valor.subSequence(2, 3).equals("0")
+					&& valor.subSequence(3, 4).equals("0")) {
+				valorletras = "Cinco Mil";
+
+			} else {
+				valorletras = "Cinco Mil ";
+			}
 			break;
 		case "6":
-			valorletras = "Seis mil ";
+			if (valor.subSequence(1, 2).equals("0") && valor.subSequence(2, 3).equals("0")
+					&& valor.subSequence(3, 4).equals("0")) {
+				valorletras = "Seis Mil";
+
+			} else {
+				valorletras = "Seis Mil ";
+			}
 			break;
 		case "7":
-			valorletras = "Siete mil ";
+			if (valor.subSequence(1, 2).equals("0") && valor.subSequence(2, 3).equals("0")
+					&& valor.subSequence(3, 4).equals("0")) {
+				valorletras = "Siete Mil";
+
+			} else {
+				valorletras = "Siete Mil ";
+			}
 			break;
 		case "8":
-			valorletras = "Ocho mil ";
+			if (valor.subSequence(1, 2).equals("0") && valor.subSequence(2, 3).equals("0")
+					&& valor.subSequence(3, 4).equals("0")) {
+				valorletras = "Ocho Mil";
+
+			} else {
+				valorletras = "Ocho Mil ";
+			}
 			break;
 		case "9":
-			valorletras = "Nueve mil ";
+			if (valor.subSequence(1, 2).equals("0") && valor.subSequence(2, 3).equals("0")
+					&& valor.subSequence(3, 4).equals("0")) {
+				valorletras = "Nueve Mil";
+
+			} else {
+				valorletras = "Nueve Mil ";
+			}
 			break;
 
 		}
@@ -69,29 +123,55 @@ public class MontoEscrito {
 			break;
 
 		case "2":
-			valorletras = valorletras + "Doscientos ";
+			if (valor.subSequence(2, 3).equals("0") && valor.subSequence(3, 4).equals("0")) {
+				valorletras = valorletras + "Doscientos";
+			} else {
+				valorletras = valorletras + "Doscientos ";
+			}
 			break;
 		case "3":
-			valorletras = valorletras + "Trescientos ";
+			if (valor.subSequence(2, 3).equals("0") && valor.subSequence(3, 4).equals("0")) {
+				valorletras = valorletras + "Trescientos";
+			} else {
+				valorletras = valorletras + "Trescientos ";
+			}
 			break;
 		case "4":
-			valorletras = valorletras + "Cuatrocientos ";
-			break;
+			if (valor.subSequence(2, 3).equals("0") && valor.subSequence(3, 4).equals("0")) {
+				valorletras = valorletras + "Cuatrocientos";
+				}else{
+					valorletras = valorletras + "Cuatrocientos ";
+				}break;
 		case "5":
-			valorletras = valorletras + "Quinientos ";
-			break;
+			if (valor.subSequence(2, 3).equals("0") && valor.subSequence(3, 4).equals("0")) {
+				valorletras = valorletras + "Quinientos";
+				}else{
+					valorletras = valorletras + "Quinientos ";
+				}break;
 		case "6":
-			valorletras = valorletras + "Seiscientos ";
-			break;
+			if (valor.subSequence(2, 3).equals("0") && valor.subSequence(3, 4).equals("0")) {
+				valorletras = valorletras + "Seiscientos";
+				}else{
+					valorletras = valorletras + "Seiscientos ";
+				}break;
 		case "7":
-			valorletras = valorletras + "Setecientos ";
-			break;
+			if (valor.subSequence(2, 3).equals("0") && valor.subSequence(3, 4).equals("0")) {
+				valorletras = valorletras + "Setecientos";
+				}else{
+					valorletras = valorletras + "Setecientos ";
+				}break;
 		case "8":
-			valorletras = valorletras + "Ochocientos ";
-			break;
+			if (valor.subSequence(2, 3).equals("0") && valor.subSequence(3, 4).equals("0")) {
+				valorletras = valorletras + "Ochocientos";
+				}else{
+					valorletras = valorletras + "Ochocientos ";
+				}break;		
 		case "9":
-			valorletras = valorletras + "Novecientos ";
-			break;
+			if (valor.subSequence(2, 3).equals("0") && valor.subSequence(3, 4).equals("0")) {
+				valorletras = valorletras + "Novecientos";
+				}else{
+					valorletras = valorletras + "Novecientos ";
+				}break;
 
 		}
 
@@ -200,19 +280,19 @@ public class MontoEscrito {
 			break;
 		case "2":
 			if (!valor.substring(2, 3).equals("1"))
-			valorletras = valorletras + "Dos";
+				valorletras = valorletras + "Dos";
 			break;
 		case "3":
 			if (!valor.substring(2, 3).equals("1"))
-			valorletras = valorletras + "Tres";
+				valorletras = valorletras + "Tres";
 			break;
 		case "4":
 			if (!valor.substring(2, 3).equals("1"))
-			valorletras = valorletras + "Cuatro";
+				valorletras = valorletras + "Cuatro";
 			break;
 		case "5":
 			if (!valor.substring(2, 3).equals("1"))
-			valorletras = valorletras + "Cinco";
+				valorletras = valorletras + "Cinco";
 			break;
 		case "6":
 			valorletras = valorletras + "Seis";
